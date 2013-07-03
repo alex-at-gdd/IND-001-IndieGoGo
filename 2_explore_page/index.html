@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, maximum-scale=0.5" />
+
+<head>
+
+    <link href='css/reset.css' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+  <link href='css/select2.css' rel='stylesheet' type='text/css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'></script>
+    <script src='js/jquery.isotope.js'></script>
+    <script src='js/isotope_custom.js'></script>
+    <script src='js/select2.js'></script>
+    <script src='js/populateData.js'></script>
+    <script src='js/search.js'></script>
+    <script src='js/filter.js'></script>
+
+
+
+    <title>
+      IndieGoGo-alex: An International Crowdfunding Platform to Raise Money
+   </title>
+
+</head>
+<body>
+  <img class='wireframe' src='images/home_wireframe.gif'>
+  <header>
+    <ul class='nav'>
+      <li class='logo'>
+        <div class='logo_title'>
+          LOGO
+        </div>
+        <div class='logo_text'>
+          Links to home page
+        </div>
+      </li>
+      <li class='explore'>
+        <div class='nav_title'>
+          Explore
+        </div>
+        <div class='nav_text'>
+          great campaigns
+        </div>
+      </li>
+      <li class='learn'>
+        <div class='nav_title'>
+          Learn
+        </div>
+        <div class='nav_text'>
+          about IndieGoGo
+        </div>
+      </li>
+      <li class='create'>
+        <div class='nav_title'>
+          Create
+        </div>
+        <div class='nav_text'>
+          your campaign
+        </div>
+      </li>
+      <!-- <li class='search'>
+        <input class='search' placeholder='Find campaigns &amp; people'>
+      </li>  -->
+      <li class='username'>
+        <div class='username_image'>
+          <img class='username_image' src='images/barack.jpg'>
+        </div>
+        <div class='username_text'>
+          username
+        </div>
+      </li>
+    </ul>
+    <div class='clearfix'></div>
+  </header>
+  <div class='wrapper'>
+    <div class='announcements'>
+      ANNOUNCEMENT AREA THAT CAN COME AND GO AS NEEDED
+    </div>
+    <div class='explore_nav'>
+      <div class='explore_title'>
+        Explore page tag line lorem ipsum dolor sit amet.
+      </div>
+      <div class='explore_categories'>
+        <ul>
+          <li>
+            <b>MUSIC</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY TWO</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY THREE</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY FOUR</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY FIVE</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY SIX</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY SEVEN</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY EIGHT</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+          <li>
+            <b>CATEGORY NINE</b><br />
+            18,745 campaigns <b>&middot;</b> 36, 967 contributors
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='explore_projects'>
+      <div class='explore_header'>
+        Fund what matters to me...
+      </div>
+      <div class="searchContainer">
+        <div class="search">Show me
+            <input class='search' placeholder='Campaigns &amp; People'>
+            <div class="searchResult"></div>
+        </div>
+        <div class="filter">campaigns that are
+            <input class='filter' placeholder='Near Me'>
+            <div class="filterResult">
+                <ul>
+                    <li>Hot Now</li>
+                    <li>Ending Soon</li>
+                    <li>New This Week</li>
+                    <li>Most Funded</li>
+                    <li class="active">Near Me</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="filterAccordion">
+          <div class="categoryTitle">So Hot Right Now</div>
+          <div class="filterAccordionBtn">Show Filters +</div>
+          <div class="filterOptions"><h3>Funding Status:</h3> <br>
+              <div class="checkbox"></div> Open <br><br>
+              <div class="checkbox"></div> Closed
+          </div>
+          <div class="filterOptions"><h3>Organization Type:</h3><br>
+              <div class="checkbox"></div> Verified Non-Profit <br><br>
+              <div class="checkbox"></div> Indiegogo Partner
+          </div>
+          <div class="filterOptions"><h3>% of Goal:</h3><br><br>
+              <input type="range" min="1" max="100">
+          </div>
+          <div class="filterOptions">Location: <br><br>
+            {San Francisco}<br>
+            <div class="locationSearch">
+                <input class='search' placeholder='Other Locations'>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- turn off sort dropdowns for now
+      <div class='explore_filter'>
+        near
+        <select class='availability filter option-set'>
+          <option data-filter-value='.sanfrancisco'>
+            San Francisco
+          </option>
+          <option data-filter-value='.montreal'>
+            Montreal
+          </option>
+          <option data-filter-value='.losangeles'>
+            Los Angeles
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+        </select>
+        tagged with
+        <select class='availability filter option-set'>
+          <option>
+            Anything
+          </option>
+          <option data-filter-value='.music'>
+            Music
+          </option>
+          <option data-filter-value='.film'>
+            Film
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+        </select>
+        sorted by
+        <select class='availability filter option-set'>
+          <option>
+            Funded by Friends
+          </option>
+          <option data-filter-value='.expiring'>
+            Expiring Soon
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+          <option data-filter-value='.sanfrancisco'>
+            Dummy Value
+          </option>
+        </select>
+      </div>  -->
+      <ul class='explore_project_cards'>
+
+      <li id= "card0" class='small_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card1" class='medium_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card2" class='small_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card3" class='small_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card4" class='small_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card5" class='medium_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+      <li id= "card6" class='small_project sanfrancisco expiring music'> <!--the beginning of one card container-->
+      </li>
+
+
+
+          <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+              <div class="cardHover">
+                  <div class='category'>
+                      SPORTS - NEW STYLE
+                  </div>
+                  <div class='backdrop'></div>
+                  <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+                  <div class='title'>
+                      Climbing Elbrus and Ararat for Charity
+                  </div>
+                  <div class='author'>
+                      by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+                  </div>
+                  <div class="fundingBar">
+                     <div class="green">
+                        <div class="endMarker"></div>
+                     </div>
+                  </div>
+                  <div class="social">
+                      <ul class='friends'>
+                          <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                      </ul>
+                      <div class='others'>
+                          John Smith, Jane Doe, Max Blue, and 108 others like this
+                      </div>
+                  </div>
+                  <div class='funding'>
+                      <div class='green'>
+                          <span class="value">$10,906 </span><span> RAISED</span>
+                      </div>
+                  </div>
+                  <div class="lower">
+                      <div class='description'>
+                          <p>
+                              We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                          </p>
+                          <p></p>
+                      </div>
+                      <div class="left">
+                          <div class="fundingStats">
+                             <div>12% funded</div>
+                          </div>
+                          <div class="fundingStats">
+                              <div>302 funders</div>
+                          </div>
+                          <div class="fundingStats">
+                              <div>15 days left</div>
+                          </div>
+                      </div>
+                      <div class="middle">
+                          <div class="trending"></div>
+                          <span>Very Popular</span>
+
+                      </div>
+                      <div class="right"></div>
+                      <div class='learnmore'>
+                          LEARN MORE
+                      </div>
+                  </div> <!--lower container-->
+              </div> <!--visible part (upper) -->
+          </li> <!--one complete card container-->
+
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+        <li  class='medium_project montreal expiring film'> <!--the beginning of one card container-->
+            <div class="cardHover">
+                <div class='category'>
+                    SPORTS MEDIUM- NEW style
+                </div>
+                <div class='backdrop'></div>
+                <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+                <div class='title'>
+                    Climbing Elbrus and Ararat for Charity
+                </div>
+                <div class='author'>
+                    Sofia, Bulgaria
+                </div>
+                <div class="fundingBar">
+                    <div class="green">
+                        <div class="endMarker"></div>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul class='friends'>
+                        <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                    </ul>
+                    <div class='others'>
+                        John Smith, Jane Doe, Max Blue, and 108 others like this
+                    </div>
+                </div>
+                <div class='funding'>
+                    <div class='green'>
+                        <span class="value">$10,906 </span><span> RAISED</span>
+                    </div>
+                </div>
+
+                <div class="lower">
+                    <div class='description'>
+                        <p>
+                            We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="left">
+                        <div class="fundingStats">
+                            <div>12% funded</div>
+                        </div>
+                        <div class="fundingStats">
+                            <div>302 funders</div>
+                        </div>
+                        <div class="fundingStats">
+                            <div>15 days left</div>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <div class="trending"></div>
+                        <span>Very Popular</span>
+
+                    </div>
+                    <div class="right"></div>
+                    <div class='learnmore'>
+                        LEARN MORE
+                    </div>
+                </div> <!--lower container-->
+            </div> <!--visible part (upper) -->
+        </li> <!--one complete card container-->
+
+      <li  class='medium_project montreal expiring film'> <!--the beginning of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS MEDIUM- NEW style
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+
+      <li  class='medium_project montreal expiring film'> <!--the beginning of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS MEDIUM- NEW style
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+      <li class='small_project sanfrancisco expiring music'> <!--the beginnig of one card container-->
+          <div class="cardHover">
+              <div class='category'>
+                  SPORTS - NEW STYLE
+              </div>
+              <div class='backdrop'></div>
+              <img src="../cards/r1/images/elbrus.jpg"  class="splash"/>
+              <div class='title'>
+                  Climbing Elbrus and Ararat for Charity
+              </div>
+              <div class='author'>
+                  by <b>Dimitar Petrov</b> - Sofia, Bulgaria
+              </div>
+              <div class="fundingBar">
+                  <div class="green">
+                      <div class="endMarker"></div>
+                  </div>
+              </div>
+              <div class="social">
+                  <ul class='friends'>
+                      <img src="../cards/r1/images/friend1.jpg" class="friend"/>
+                  </ul>
+                  <div class='others'>
+                      John Smith, Jane Doe, Max Blue, and 108 others like this
+                  </div>
+              </div>
+              <div class='funding'>
+                  <div class='green'>
+                      <span class="value">$10,906 </span><span> RAISED</span>
+                  </div>
+              </div>
+              <div class="lower">
+                  <div class='description'>
+                      <p>
+                          We'll climb Mount Elbrus and Mount Ararat in 20 days &#8722; between the 1st and 20th of August 2013 &#8722; for charity. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum Lorem ipsum.
+                      </p>
+                      <p></p>
+                  </div>
+                  <div class="left">
+                      <div class="fundingStats">
+                          <div>12% funded</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>302 funders</div>
+                      </div>
+                      <div class="fundingStats">
+                          <div>15 days left</div>
+                      </div>
+                  </div>
+                  <div class="middle">
+                      <div class="trending"></div>
+                      <span>Very Popular</span>
+
+                  </div>
+                  <div class="right"></div>
+                  <div class='learnmore'>
+                      LEARN MORE
+                  </div>
+              </div> <!--lower container-->
+          </div> <!--visible part (upper) -->
+      </li> <!--one complete card container-->
+
+      </ul>
+    </div>
+    <div class='pre_footer'>
+      <div class='load_more'>
+        Load More
+      </div>
+      <div class='top'>
+        ^ TOP
+      </div>
+    </div>
+    <div class='footer'>
+      <div class='campaigns'>
+        <div class='footer_big'>
+          <b>2,300,430</b><br />
+        </div>
+        <div class='footer_small'>
+          Campaigns
+        </div>
+      </div>
+      <div class='contributors'>
+        <div class='footer_big'>
+          <b>24, 434, 244</b><br />
+        </div>
+        <div class='footer_small'>
+          Contributors
+        </div>
+      </div>
+      <div class='raised'>
+        <div class='footer_big'>
+          <b>$50,123,456</b><br />
+        </div>
+        <div class='footer_small'>
+          Raised
+        </div>
+      </div>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+
+
+</body>
+
+<!-- Localized -->
